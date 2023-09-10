@@ -26,10 +26,14 @@ No usage of external libraries
 ## Breakup
 ![Database](https://github.com/gittyvarshney/adminUI/blob/main/design.png?raw=true)
 
+## Deployment URL
+https://gittyvarshney.github.io/adminUI
+
 ## Steps to run locally
 
 ### `git clone`
 clone the repository using the git clone command
+git clone https://github.com/gittyvarshney/adminUI.git
 
 ### `npm install`
 
