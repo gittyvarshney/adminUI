@@ -12,8 +12,6 @@ const Header = (props) => {
     const handlePageCheckbox = (e) => {
 
         const isChecked = e.target.checked;
-        console.log(isChecked);
-        console.log(currentPage);
         onPageCheckboxClicked(currentPage,isChecked);
 
     }

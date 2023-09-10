@@ -9,13 +9,14 @@ import './App.css';
 
 import useGetData from './hooks/useQuery';
 import useCheckboxSelection from './hooks/useCheckboxSelection';
+import { API_URL } from './constants';
 
 /** Code Implementation with of Admin-UI */
 function App() {
 
 
 
-    const [userData, pagination, actions ] = useGetData();
+    const [userData, pagination, actions ] = useGetData(API_URL);
 
     const {totalPages, currentPage } = pagination;
     const {onDelete, onEdit, onPageChange, onFilter } = actions;

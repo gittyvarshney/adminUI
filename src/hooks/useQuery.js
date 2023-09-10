@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { dummyResponse } from "../resposne";
 import { useMemo } from "react";
 import { RECORDS_PER_PAGE } from "../constants";
 
@@ -57,15 +56,12 @@ const useGetData = (url) => {
 
     useEffect(() => {
 
-        new Promise((res,rej) => {
-            setTimeout(() => {
-                res(dummyResponse)
-            },1000)
-        }).then((response) => {
-            console.log("response is: ", response);
+        fetch(url)
+        .then((res) => res.json())
+        .then((response) => {
             setAllUsersData(response)
         }).catch((err) => {
-            console.log("something went wrong ", err);
+            console.log("error while fetching api: ", err);
         })
 
     }, []);
