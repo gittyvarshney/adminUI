@@ -1,0 +1,70 @@
+.content-wrapper{
+    padding: 10px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    font-size: 16px;
+    flex-wrap: wrap;
+    border-bottom: 2px solid #f2f0ed;
+}
+
+.content-wrapper.selected{
+    background-color: #f2f0ed;
+}
+
+.input-wrapper{
+    min-width: 50px;
+    width: 20%;
+    /* margin-right: 100px; */
+}
+
+.input-wrapper input{
+    width: 20px;
+    height: 20px;
+}
+
+.field-wrapper{
+    min-width: 200px;
+    width: 20%;
+}
+
+.field-wrapper input{
+    padding: 5px;
+    outline: none;
+    border: 1px solid #ded7d9;
+    border-radius: 10px;
+    width: 90%;
+}
+
+.action-row{
+    min-width: 150px;
+    width: 20%;
+}
+
+.action-row button{
+    padding: 10px;
+    border-radius: 20px;
+    color: whitesmoke;
+}
+
+.delete-btn{
+    background-color: #d65676;
+    border: 1px solid #d65676;
+}
+
+.edit-btn{
+    margin-right: 5px;
+    background-color: #166782;
+    border: 1px solid #166782;
+}
+
+@media (max-width: 500px) {
+
+    .field-wrapper{
+        margin-top: 10px;
+    }
+
+    .action-row{
+        margin-top: 10px;
+    }
+}

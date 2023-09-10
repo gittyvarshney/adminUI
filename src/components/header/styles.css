@@ -1,0 +1,41 @@
+.header-wrapper{
+    padding-inline: 10px;
+    padding-block: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 2px solid #f2f0ed;
+}
+
+.checkbox-wrapper{
+    min-width: 50px;
+    width: 20%;
+}
+
+.checkbox-wrapper input{
+    width: 20px;
+    height: 20px;
+}
+
+.text-row{
+    min-width: 200px;
+    width: 20%;
+}
+
+.action-row{
+    min-width: 150px;
+    width: 20%;
+}
+
+@media (max-width: 500px) {
+
+    .text-row{
+        margin-top: 10px;
+    }
+
+    .action-row{
+        margin-top: 10px;
+    }
+}
